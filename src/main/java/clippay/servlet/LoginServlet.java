@@ -44,11 +44,9 @@ public class LoginServlet extends HttpServlet {
             System.out.println("Login exitoso: " + username + " - Rol: " + user.getRolNombre());
             
             if ("ADMIN".equalsIgnoreCase(user.getRolNombre())) {
-                // usa el servlet /desktop en lugar del JSP directo
-                /**response.sendRedirect(request.getContextPath() + "/desktop");*/
                 response.sendRedirect(request.getContextPath() + "/admin/empleados"); 
             } else if ("BARBERO".equalsIgnoreCase(user.getRolNombre())) {
-                response.sendRedirect(request.getContextPath() + "/pages/barbero/marcacion.jsp");
+                response.sendRedirect(request.getContextPath() + "/barbero/panel");
             } else if ("RECEPCIONISTA".equalsIgnoreCase(user.getRolNombre())) {
                 response.sendRedirect(request.getContextPath() + "/pages/recepcion/panel.jsp");
             } else {

@@ -16,5 +16,6 @@ clippay\servlet\PeriodosServlet.class
 clippay\config\TestConexion.class
 clippay\model\Servicio.class
 clippay\servlet\InicioServlet.class
+clippay\servlet\BarberoPanelServlet.class
 clippay\servlet\EmpleadoServlet.class
 clippay\servlet\LoginServlet.class
